@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10172a">
+    <title>Little Sum — Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <section class="calculator" aria-labelledby="welcome-title">
+        <p class="eyebrow">A little math goes a long way</p>
+        <h1 id="welcome-title">Welcome to Little Sum<span>.</span></h1>
+        <p class="intro">Add two numbers and get your answer in a snap.</p>
+
+        <form id="calculator-form">
+          <div class="fields">
+            <label class="number-field">
+              <span>First number</span>
+              <input id="first-number" name="firstNumber" type="number" step="any" placeholder="e.g. 12" required>
+            </label>
+            <span class="plus" aria-hidden="true">+</span>
+            <label class="number-field">
+              <span>Second number</span>
+              <input id="second-number" name="secondNumber" type="number" step="any" placeholder="e.g. 8" required>
+            </label>
+          </div>
+
+          <button type="submit">Count <span aria-hidden="true">→</span></button>
+        </form>
+
+        <p id="result" class="result" aria-live="polite">Your result will appear here.</p>
+      </section>
+      <p class="footer-note">Made for curious minds.</p>
+    </main>
+  </body>
+</html>
